@@ -1,0 +1,14 @@
+
+.container{
+    display: flex;
+    background-color: rgb(249, 249, 249);
+    margin-top: 25px;
+   
+}
+
+.seconds{
+    width: 100%;
+    
+}
+
+

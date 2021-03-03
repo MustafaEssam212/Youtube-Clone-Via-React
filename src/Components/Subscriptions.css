@@ -1,0 +1,35 @@
+.sub-btn{
+    height: 40px;
+    width: 100px;
+    outline: none;
+    border: 1px solid rgb(3, 93, 211);
+    background-color: transparent;
+    color: rgb(44, 109, 230);
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.fa-youtube{
+    font-size: 125px;
+    color: rgb(144, 144, 144);
+}
+
+.firstp{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 30px;
+}
+
+.secondp{
+    font-family: sans-serif;
+}
+
+.sub-cont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 560px;
+}
+

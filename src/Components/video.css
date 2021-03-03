@@ -1,0 +1,388 @@
+.main{
+    height: 560px;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0px 10px 0px;
+}
+
+
+.main::-webkit-scrollbar{
+    width: 10px;
+   
+}
+
+
+.main::-webkit-scrollbar-thumb{
+    background-color: rgb(211, 211, 211);
+    
+    
+}
+
+
+.vside{
+    display: none;
+}
+
+#vsidss{
+    background-color: white;
+    height: 560px;
+    width: 240px;
+    margin-top: 0px;
+    overflow-x: hidden;
+    scrollbar-arrow-color:white;
+    scrollbar-width: 50px;
+    position: absolute;
+        z-index: 100;
+        left: -240px;
+    
+}
+
+#vsidss::-webkit-scrollbar{
+    width: 8px;
+}
+
+
+#vsidss::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 255, 255);
+    
+}
+
+#vsidss:hover::-webkit-scrollbar-thumb{
+    background-color: rgb(211, 211, 211);
+    
+}
+
+
+
+
+.first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.first a {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+  
+}
+
+.first a div:hover {
+    background-color: rgb(241, 241, 241);
+    
+}
+
+
+.first a div{
+   width: 250px;
+    display: flex;
+    padding-left: 35px;
+    place-items: center;
+    height: 40px;
+}
+
+.first a div a{
+    
+    width: 40px;
+    margin-left: 10px;
+}
+
+.first a div i{
+    width: 50px;
+    text-align: center;
+    font-size: 19px;
+}
+
+
+#vsidss hr{
+    opacity: .3;
+}
+
+.second p{
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 16px;
+}
+
+.second{
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+
+
+.second button{
+    height: 40px;
+    width: 100px;
+    outline: none;
+    border: 1px solid rgb(3, 93, 211);
+    background-color: transparent;
+    color: rgb(44, 109, 230);
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.second button i{
+    color: rgb(3, 93, 211);
+    font-size: 19px;
+}
+
+.active .fas{
+    color: red;
+}
+
+.active {
+    background-color: rgb(221, 220, 220);
+}
+
+.active .fab{
+    color: red;
+}
+
+@keyframes anime {
+    0%{
+        left: -240px;
+    }
+
+    25%{
+        left: -180px;
+    }
+
+    50%{
+        left: -120px;
+    }
+
+    75%{
+        left: -60px;
+    }
+
+    100%{
+        left: 0px;
+    }
+}
+
+
+@media (max-width: 850px){
+    #vsidss{
+        position: absolute;
+        z-index: 100;
+        left: -240px;
+    }
+
+    .vside{
+        display: none;
+    }
+
+    
+
+
+}
+
+.video-side{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+
+.ad{
+    margin-top: 10px;
+    background-color: white;
+}
+.sugg-videos{
+   
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+
+.controls .fas{
+    font-size: 18px;
+}
+
+.video-title{
+    font-family: 'Allerta', sans-serif;
+    color: rgba(0, 0, 0, 0.842);
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.like-view-share{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -15px;
+}
+
+.left-side{
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    color: rgb(68, 68, 68);
+    font-size: 15px;
+}
+
+.right-side{
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    color: rgb(116, 111, 111);
+    font-size: 18px;
+}
+
+.right-side i{
+    font-size: 22px;
+}
+
+.right-side div{
+    margin-right: 20px;
+    
+}
+
+.right-side div i {
+    margin: 0px 10px;
+    cursor: pointer;
+}
+
+
+.ptwo{
+    padding: 10px;
+   
+}
+
+.pthree{
+    padding: 10px;
+    cursor: pointer;
+}
+
+.vhr{
+    opacity: .3;
+    margin-top: -10px;
+}
+
+.desc img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 12px;
+}
+
+.desc a{
+    display: flex;
+    align-items: center;
+    font-family: 'Allerta', sans-serif;
+    color: rgba(82, 82, 82, 0.925);
+    font-size: 12px;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.desc button{
+    height: 40px;
+    width: 100px;
+    outline: none;
+    border: none;
+    background-color: #CC0000;
+    color: white;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+.desc div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.desc p{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.comments{
+    margin-bottom: 20px;
+}
+
+.comments p {
+    text-align: center;
+}
+
+.vvideo{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+
+
+.vtitle{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 5px;
+   
+}
+
+
+
+.vvideo img{
+    width: 260px;
+    height: 150px;
+}
+
+.vchannel{
+    
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.527);
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 15px;
+    position: relative;
+    margin-top: 5px;
+}
+
+.vchannel span{
+    display: none;
+}
+
+
+.vchannel:hover span{
+    display: block;
+    z-index: 100;
+    background-color: rgba(59, 59, 59, 0.842);
+    position: absolute;
+    bottom: 30px;
+    left: 0%;
+    height: max-content;
+    color: white;
+    width: max-content;
+    padding: 10px;
+    place-items: center;
+    border-radius: 5px;
+}
+
+.vname{
+    text-decoration: none;
+    font-family: 'Allerta', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+@media (max-width: 850px){
+    .video-side{
+        margin-left: 0;
+        width: 100%;
+    }
+
+   
+}

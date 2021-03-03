@@ -1,0 +1,156 @@
+.soper{
+    display: none;
+}
+
+#sidss{
+    background-color: white;
+    height: 560px;
+    width: 240px;
+    margin-top: 0px;
+    overflow-x: hidden;
+    scrollbar-arrow-color:white;
+    scrollbar-width: 50px;
+    
+}
+
+#sidss::-webkit-scrollbar{
+    width: 8px;
+}
+
+
+#sidss::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 255, 255);
+    
+}
+
+#sidss:hover::-webkit-scrollbar-thumb{
+    background-color: rgb(211, 211, 211);
+    
+}
+
+
+
+
+.first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.first a {
+    text-decoration: none;
+    color: rgb(85, 85, 85);
+  
+}
+
+.first a div:hover {
+    background-color: rgb(241, 241, 241);
+    
+}
+
+
+.first a div{
+   width: 250px;
+    display: flex;
+    padding-left: 35px;
+    place-items: center;
+    height: 40px;
+}
+
+.first a div a{
+    
+    width: 40px;
+    margin-left: 10px;
+}
+
+.first a div i{
+    width: 50px;
+    text-align: center;
+    font-size: 19px;
+}
+
+
+#sidss hr{
+    opacity: .3;
+}
+
+.second p{
+    font-family: 'Yantramanav', sans-serif;
+    font-size: 16px;
+}
+
+.second{
+    text-align: center;
+    margin-bottom: 15px;
+    
+}
+
+
+.second button{
+    height: 40px;
+    width: 100px;
+    outline: none;
+    border: 1px solid rgb(3, 93, 211);
+    background-color: transparent;
+    color: rgb(44, 109, 230);
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.second button i{
+    color: rgb(3, 93, 211);
+    font-size: 19px;
+}
+
+.active .fas{
+    color: red;
+}
+
+.active {
+    background-color: rgb(221, 220, 220);
+}
+
+.active .fab{
+    color: red;
+}
+
+@keyframes anime {
+    0%{
+        left: -240px;
+    }
+
+    25%{
+        left: -180px;
+    }
+
+    50%{
+        left: -120px;
+    }
+
+    75%{
+        left: -60px;
+    }
+
+    100%{
+        left: 0px;
+    }
+}
+
+
+@media (max-width: 850px){
+    #sidss{
+        position: absolute;
+        z-index: 100;
+        left: -240px;
+    }
+
+    .side{
+        display: none;
+    }
+
+}
